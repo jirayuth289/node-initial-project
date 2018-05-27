@@ -28,7 +28,7 @@ export default () => {
 
     app.use(Middleware.logsBody); //console.log(req.body)
 
-    app.get("/", (req, res) => res.send("hello Spark"));
+    app.get("/", (req, res) => res.send("hello world"));
     app.use("/api", routes(Router()));
 
     app.use(Middleware.endpointNotfound); // If no route is matched by now, it must be a 404
